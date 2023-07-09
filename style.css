@@ -1,4 +1,177 @@
-p {
-    text-align: center;
-    color: red;
-  }
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+
+    font-size: 15px;
+    line-height: 1.8;
+    color: #333;
+    min-height: 100vh;
+    padding: 0;
+}
+
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0;
+}
+
+.container { 
+    width: 100%;
+    margin: 0;
+    background-color: #333;
+    color:#ffe4c4;
+
+}
+
+
+.topside {
+    width: 100%;
+    height: 100vh;
+    padding-top: 60px;
+    background: url("/assets/background/background.jpg") center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.container_topside {
+    width: 60%;
+    margin-left: 35px;
+    
+} 
+
+
+.container_topside::before {
+    opacity: 30%;
+} 
+
+
+.cv_title {
+    padding-bottom: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    z-index: 1001;
+}
+
+.container_contacts {
+    width: 30%;
+    float: right;
+    margin-right: 35px;
+}
+
+.header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    
+}
+
+.header_logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav {
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.link {
+   
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    margin: 0 15px;
+    vertical-align: top;
+    transition: color 0.5s linear;
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #a88f1e;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    transition: opacity 0.5s linear;
+}
+
+.link:hover {
+    color: #a88f1e;
+}
+
+.link:hover::after {
+    opacity: 1;
+}
+
+.container_link {
+    color:#fff;
+    text-decoration: none;
+}
+
+.avatar {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.container_avatar { 
+  
+    margin-right: 170px;
+}
+
+.container_skills {
+    width: 20%;
+   
+    margin-left: 35px;
+   
+}
+
+.container_languages {
+    width: 20%;
+    float: right;
+    margin-right: 35px;
+    
+}
+
+.container_programminglanguages {
+    width: 20%;
+    margin-left: 35px;
+    margin-top: 200px;
+}
+
+
+.container_footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.rss {
+    width: 120px;
+    height: 45px;
+    background-image: url(assets/svg/rs_school_js.svg);
+    background-repeat: no-repeat;    
+}
